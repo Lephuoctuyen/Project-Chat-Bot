@@ -1,0 +1,34 @@
+version: "3.1"
+nlu:
+  - intent: greet
+    examples: |
+      - Xin chào
+      - Chào bạn
+      - Hello
+      - Hi
+      - Chào buổi sáng
+      
+  - intent: goodbye
+    examples: |
+      - Tạm biệt
+      - Hẹn gặp lại
+      - Bye
+      - Chào tạm biệt
+      - Hẹn gặp sau
+
+  - intent: ask_math_concept
+    examples: |
+      - Khái niệm của [đạo hàm](math_concept) là gì?
+      - Bạn có thể giải thích về [tích phân](math_concept) không?
+      - [Ma trận](math_concept) có nghĩa là gì?
+      - Tôi muốn biết về [hình học](math_concept).
+      - Hãy nói cho tôi về [số phức](math_concept).
+
+  - intent: ask_math_formula
+    examples: |
+      - Công thức của [đạo hàm](math_formula) là gì?
+      - Bạn có thể cung cấp công thức của [tích phân](math_formula) không?
+      - Công thức tính diện tích của [hình tròn](math_formula) là gì?
+      - Làm thế nào để tính [định thức ma trận](math_formula)?
+      - Công thức tính tổng của dãy số [cấp số cộng](math_formula)?
+      - Công thức tương ứng

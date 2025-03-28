@@ -1,0 +1,21 @@
+version: "3.1"
+stories:
+  - story: provide_math_concept
+    steps:
+      - intent: ask_math_concept
+      - action: action_provide_math_concept
+
+  - story: provide_math_formula
+    steps:
+      - intent: ask_math_formula
+      - action: action_provide_math_formula
+
+  - story: user_greets
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - story: user_goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye

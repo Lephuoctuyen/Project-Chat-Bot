@@ -1,0 +1,21 @@
+version: "3.1"
+rules:
+  - rule: Respond to math concept question
+    steps:
+      - intent: ask_math_concept
+      - action: action_provide_math_concept
+
+  - rule: Respond to math formula question
+    steps:
+      - intent: ask_math_formula
+      - action: action_provide_math_formula
+
+  - rule: Respond to greeting
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - rule: Respond to goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
