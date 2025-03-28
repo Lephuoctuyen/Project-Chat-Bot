@@ -1,0 +1,33 @@
+version: "3.1"
+intents:
+  - greet
+  - goodbye
+  - ask_math_concept
+  - ask_math_formula
+
+entities:
+  - math_concept
+  - math_formula
+
+slots:
+  math_concept:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: math_concept
+  math_formula:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: math_formula
+
+
+responses:
+  utter_greet:
+    - text: "Xin chào! Tôi có thể giúp gì cho bạn hôm nay?"
+  utter_goodbye:
+    - text: "Tạm biệt! Hẹn gặp lại bạn sau."
+
+actions:
+  - action_provide_math_concept
+  - action_provide_math_formula
